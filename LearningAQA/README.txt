@@ -1,0 +1,1 @@
+To run any of Homework task please uncomment needed method in Runner.cs file

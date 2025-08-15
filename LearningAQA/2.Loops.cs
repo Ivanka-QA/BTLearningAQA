@@ -8,20 +8,26 @@ using System.Threading.Tasks;
 {
     public static void NumbersGuesser ()
     {
-        //    3. Цикли — Вгадай число
-        //Комп’ютер загадує число від 1 до 20. Користувач вводить числа, поки не вгадає.
-        //Після кожної спроби підказувати: 'Більше' або 'Менше'. 
+        //    3. Цикли — Вгадай число. Комп’ютер загадує число від 1 до 20. Користувач вводить числа, поки не вгадає. Після кожної спроби підказувати: 'Більше' або 'Менше'. 
 
         Random random = new Random();   
         while (true)
         {
-            //Console.WriteLine("Let's set the range for randomizer");
-            //Console.WriteLine("Enter the lower edge");
-            //int.TryParse(Console.ReadLine(), out int lowerEdge);
-            //Console.WriteLine("Enter the higher edge");
-            //int.TryParse(Console.ReadLine(), out int higherEdge);
-            //int randomNumber = random.Next(lowerEdge, higherEdge + 1);
-            //Console.WriteLine($"Guess a number between {lowerEdge} and {higherEdge}.");
+            /*
+                if you uncomment the following commented part but comment row 33 ->
+                the program will ask a user to set the range for numbers randomizer
+            */
+
+            /*
+                Console.WriteLine("Let's set the range for randomizer");
+                Console.WriteLine("Enter the lower edge");
+                int.TryParse(Console.ReadLine(), out int lowerEdge);
+                Console.WriteLine("Enter the higher edge");
+                int.TryParse(Console.ReadLine(), out int higherEdge);
+                int randomNumber = random.Next(lowerEdge, higherEdge + 1);
+                Console.WriteLine($"Guess a number between {lowerEdge} and {higherEdge}.");
+            */
+
             int randomNumber = random.Next(1, 21);
             while (true)
             {
