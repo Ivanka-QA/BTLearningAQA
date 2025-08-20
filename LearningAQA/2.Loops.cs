@@ -63,11 +63,32 @@ using System.Threading.Tasks;
 
     }
 
+    public static void PasswordGenerator()
+    {
+        //4. Цикли — Генератор паролів
+        //Запросити у користувача довжину пароля та створити пароль з випадкових цифр і літер.
+        Console.WriteLine("Enter password length you would like to generate");
+        int.TryParse(Console.ReadLine(), out int passwordLength);
+
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var arrayOfChars = new char[passwordLength];
+        var random = new Random();
+
+        for (int i = 0; i < arrayOfChars.Length; i++)
+        {
+            arrayOfChars[i] = chars[random.Next(chars.Length)];
+        }
+
+        var generatedPassword = new String(arrayOfChars);
+        Console.WriteLine($"Generated password is: {generatedPassword}");
+
+    }
+
+  
 
 
 
-    //4. Цикли — Генератор паролів
-    //Запросити у користувача довжину пароля та створити пароль з випадкових цифр і літер.
+
 
 
 

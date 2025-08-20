@@ -9,12 +9,15 @@ public class Runner
     public static void Main(string[] args)
     {
         //Task 1
-        ConditionalOperators.DiscountCalculator();
+        //ConditionalOperators.DiscountCalculator();
 
         //Task2
         //ConditionalOperators.TemperatureAdvisor();
 
         //Task3
         //Loops.NumbersGuesser(); 
+
+        //Task4
+        Loops.PasswordGenerator();
     }
 }
